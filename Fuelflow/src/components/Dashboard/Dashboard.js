@@ -36,6 +36,10 @@ const Dashboard = () => {
     navigate('/meal-analysis');
   };
 
+  const handlePeriodTracker = () => {
+    navigate('/period-tracker');  // Navigate to the /period-tracker page
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: '#FF69B4' }}>
@@ -57,11 +61,11 @@ const Dashboard = () => {
           variant="h4"
           component="h1"
           gutterBottom
-          sx={{ 
+          sx={{
             textAlign: 'center',
             color: '#FF69B4',
             fontWeight: 'bold',
-            mb: 4
+            mb: 4,
           }}
         >
           Welcome to FuelFlow
@@ -182,6 +186,24 @@ const Dashboard = () => {
                 </Button>
               </CardContent>
             </Card>
+          </Grid>
+
+          {/* New button to navigate to Period Tracker page */}
+          <Grid item xs={12}>
+            <Button
+              variant="contained"
+              fullWidth
+              onClick={handlePeriodTracker}
+              sx={{
+                mt: 4,
+                backgroundColor: '#FF69B4',
+                '&:hover': {
+                  backgroundColor: '#FF1493',
+                },
+              }}
+            >
+              Go to Period Tracker
+            </Button>
           </Grid>
         </Grid>
       </Container>
