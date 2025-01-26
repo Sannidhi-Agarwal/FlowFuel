@@ -201,48 +201,6 @@ const MealRecommendation = () => {
             Analysis Results
           </Typography>
           
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6" color="success.main" gutterBottom>
-                    Recommended Items
-                  </Typography>
-                  <List>
-                    {recommendations.recommended.map((item, index) => (
-                      <ListItem key={index}>
-                        <ListItemIcon>
-                          <CheckCircleIcon color="success" />
-                        </ListItemIcon>
-                        <ListItemText primary={item} />
-                      </ListItem>
-                    ))}
-                  </List>
-                </CardContent>
-              </Card>
-            </Grid>
-            
-            <Grid item xs={12} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6" color="error.main" gutterBottom>
-                    Not Recommended Items
-                  </Typography>
-                  <List>
-                    {recommendations.notRecommended.map((item, index) => (
-                      <ListItem key={index}>
-                        <ListItemIcon>
-                          <CancelIcon color="error" />
-                        </ListItemIcon>
-                        <ListItemText primary={item} />
-                      </ListItem>
-                    ))}
-                  </List>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
-          
           <Card sx={{ mt: 3 }}>
             <CardContent>
               <Typography variant="h6" gutterBottom>
