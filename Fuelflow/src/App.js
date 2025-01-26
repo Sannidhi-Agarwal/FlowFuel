@@ -116,6 +116,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/meal-recommendation" element={<MealRecommendation />} />
             <Route path="/meal-analysis" element={<MealAnalysis />} />
+            <Route path="/period-tracker" element={<PeriodTracker />} />
           </Routes>
         </Router>
       </AuthProvider>
