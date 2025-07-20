@@ -9,6 +9,8 @@ import CycleInfo from './components/Auth/CycleInfo';
 import Dashboard from './components/Dashboard/Dashboard';
 import MealRecommendation from './components/MealRecommendation/MealRecommendation';
 import MealAnalysis from './components/MealAnalysis/MealAnalysis';
+import PeriodTracker from './components/PeriodTracker/PeriodTracker';
+
 
 // Create a custom theme with enhanced aesthetics
 const theme = createTheme({
